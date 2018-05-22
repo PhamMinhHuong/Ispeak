@@ -1,0 +1,134 @@
+// ======================================================
+// Components :: Icons
+// ======================================================
+
+// Icon Fonts
+@font-face {
+  font-family: jootoicons;
+  src:
+    url('#{$path-fonts}/jootoicons.ttf?vg4992') format('truetype'),
+    url('#{$path-fonts}/jootoicons.woff?vg4992') format('woff'),
+    url('#{$path-fonts}/jootoicons.svg?vg4992#jootoicons') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+[class^='icon-fonts--'],
+[class*=' icon-fonts--'] {
+  // use !important to prevent issues with browser extensions that change fonts
+  // stylelint-disable-next-line declaration-no-important
+  font-family: jootoicons, sans-serif !important;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  // Better Font Rendering
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+$icon-fonts: 'icon-fonts';
+
+.#{$icon-fonts}--arrow-up:before { content: '\e900'; }
+.#{$icon-fonts}--bell:before { content: '\e901'; }
+.#{$icon-fonts}--checklist:before { content: '\e902'; }
+.#{$icon-fonts}--checklist-bold:before { content: '\e903'; }
+.#{$icon-fonts}--close:before { content: '\e904'; }
+.#{$icon-fonts}--edit:before { content: '\e905'; }
+.#{$icon-fonts}--edit-outline:before { content: '\e906'; }
+.#{$icon-fonts}--folder-open:before { content: '\e908'; }
+.#{$icon-fonts}--plus:before { content: '\e909'; }
+.#{$icon-fonts}--plus-bold:before { content: '\e90a'; }
+.#{$icon-fonts}--rotate:before { content: '\e90b'; }
+.#{$icon-fonts}--search:before { content: '\e90c'; }
+.#{$icon-fonts}--setting:before { content: '\e90d'; }
+.#{$icon-fonts}--three-dot:before { content: '\e90e'; }
+.#{$icon-fonts}--tick:before { content: '\e90f'; }
+.#{$icon-fonts}--trash:before { content: '\e910'; }
+.#{$icon-fonts}--triangle-down:before { content: '\e911'; }
+
+// Icon Images
+.icon-images {
+  display: inline-block;
+  background-position: 0 0;
+  background-size: cover;
+
+  @include m('arrow-left') {
+    width: 30px;
+    height: 48px;
+    background-image: url('#{$path-image}/icon-arrow-left.svg');
+  }
+
+  @include m('arrow-right') {
+    width: 31px;
+    height: 48px;
+    background-image: url('#{$path-image}/icon-arrow-right.svg');
+  }
+
+  @include m('google') {
+    width: 14px;
+    height: 16px;
+    background-image: url('#{$path-image}/icon-google.png');
+  }
+
+  @include m('arrow-special') {
+    width: 68px;
+    height: 42px;
+    background-image: url('#{$path-image}/icon-arrow-special.svg');
+  }
+
+  @include m('color-picker') {
+    width: 20px;
+    height: 20px;
+    background-image: url('#{$path-image}/icon-color-picker.svg');
+  }
+
+  @include m('decorator-left') {
+    width: 48px;
+    height: 102px;
+    background-image: url('#{$path-image}/icon-decorator-left.svg');
+  }
+
+  @include m('decorator-right') {
+    width: 33px;
+    height: 74px;
+    background-image: url('#{$path-image}/icon-decorator-right.svg');
+  }
+
+  @include m('google-1') {
+    width: 184px;
+    height: 132px;
+    background-image: url('#{$path-image}/icon-google-1.svg');
+  }
+
+  @include m('google-2') {
+    width: 198px;
+    height: 140px;
+    background-image: url('#{$path-image}/icon-google-2.svg');
+  }
+
+  @include m('help') {
+    width: 16px;
+    height: 16px;
+    background-image: url('#{$path-image}/icon-help.png');
+  }
+
+  @include m('slack-1') {
+    width: 177px;
+    height: 140px;
+    background-image: url('#{$path-image}/icon-slack-1.svg');
+  }
+
+  @include m('slack-2') {
+    width: 120px;
+    height: 122px;
+    background-image: url('#{$path-image}/icon-slack-2.svg');
+  }
+
+  @include m('mention') {
+    width: 20px;
+    height: 21px;
+    background-image: url('#{$path-image}/icon-mention.png');
+  }
+}

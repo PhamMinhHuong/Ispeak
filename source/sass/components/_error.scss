@@ -1,0 +1,24 @@
+// ======================================================
+// Components :: Error
+// ======================================================
+
+.error {
+  color: $red;
+  background-color: $red-light;
+  padding: 7px 12px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 0;
+
+  @include m('large') {
+    padding: 11px 17px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  @include m('text') {
+    background-color: transparent;
+    padding: 0;
+  }
+}

@@ -1,0 +1,18 @@
+//-------------------------------------------------------
+//- Modules :: Forms
+//-------------------------------------------------------
+
+mixin input-field({ type, placeholder })
+  input.form-control(
+    type= type ? type : 'text'
+    placeholder= placeholder ? placeholder : null
+  )&attributes(attributes)
+
+mixin group-input-field({ label, id, type, placeholder })
+  .form-group.form-customize&attributes(attributes)
+    label(
+      for= id ? id : null
+    )= label
+    +input-field({ type, placeholder })(
+      id= id ? id : null
+    )

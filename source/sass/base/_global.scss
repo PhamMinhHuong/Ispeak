@@ -1,0 +1,14 @@
+// ======================================================
+// Base :: Global
+// ======================================================
+body {
+  font-size: 14px;
+  background-color: $gray-light;
+  font-family: $font-family-base;
+
+  // We use mixin breakpoint like this
+  // https://getbootstrap.com/docs/4.0/layout/overview/#responsive-breakpoints
+  @include media-breakpoint-down(sm) {
+    background-color: $gray-light;
+  }
+}

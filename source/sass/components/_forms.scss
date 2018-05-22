@@ -1,0 +1,18 @@
+// ======================================================
+// Components :: Forms
+// ======================================================
+
+.form-customize {
+  label {
+    font-size: 12px;
+    font-weight: 600;
+    color: $gray-darker;
+  }
+
+  .form-control {
+    border-radius: 8px;
+    padding: 10px 16px 11px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+}

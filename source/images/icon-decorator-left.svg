@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="102px" viewBox="0 0 48 102" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="dashboard_projectlist_firsttime" transform="translate(-490.000000, -204.000000)">
+            <g id="Group-4" transform="translate(490.000000, 205.000000)">
+                <g id="Group-7" transform="translate(0.000000, 64.000000)" fill="#FC78B9">
+                    <rect id="Path" transform="translate(6.000000, 6.000000) rotate(-315.000000) translate(-6.000000, -6.000000) " x="5" y="-1" width="2" height="14" rx="1"></rect>
+                    <rect id="Path" transform="translate(5.935718, 6.064282) rotate(-45.000000) translate(-5.935718, -6.064282) " x="5.02662666" y="-0.935717565" width="1.81818182" height="14" rx="0.909090909"></rect>
+                </g>
+                <circle id="Oval-5" stroke="#FDD835" stroke-width="2" cx="19.5" cy="7.5" r="7.5"></circle>
+                <circle id="Oval-5-Copy-2" stroke="#4DABFF" stroke-width="2" cx="43.5" cy="96.5" r="3.5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

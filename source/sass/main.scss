@@ -1,0 +1,52 @@
+// We architecting this project follow as the "7-1 Pattern" (7 folders, 1 file)
+// For more detail about this pattern
+// (https://sass-guidelin.es/#the-7-1-pattern)
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+
+// https://getbootstrap.com/docs/4.0/getting-started/theming/#sass
+@import 'bootstrap/scss/bootstrap-grid';
+@import 'bootstrap/scss/bootstrap-reboot';
+
+// 1. Abstracts
+// ------------
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/functions';
+
+// 2. Vendors
+// ----------
+@import 'bootstrap/scss/tables';
+@import 'bootstrap/scss/nav';
+@import 'bootstrap/scss/utilities';
+@import 'bootstrap/scss/buttons';
+@import 'bootstrap/scss/list-group';
+@import 'bootstrap/scss/forms';
+
+// 3. Base
+// -------
+@import 'base/global';
+@import 'base/typography';
+@import 'base/colors';
+@import 'base/images';
+
+// 4. Layout
+// ---------
+@import 'layout/content';
+@import 'layout/header';
+
+// 5. Components
+// -------------
+@import 'components/tables';
+@import 'components/buttons';
+@import 'components/icons';
+@import 'components/error';
+@import 'components/forms';
+
+// 6. Pages
+// --------
+@import 'pages/home';
+
+// 7. Themes
+// ---------
+// We just have only 1 theme in this project

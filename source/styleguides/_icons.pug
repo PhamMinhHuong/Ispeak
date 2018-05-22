@@ -1,0 +1,61 @@
+//-------------------------------------------------------
+//- Styleguides :: Icons
+//-------------------------------------------------------
+
+h2 Icon fonts
+-
+  var iconFonts = [
+    { name: 'arrow-up' },
+    { name: 'bell' },
+    { name: 'checklist' },
+    { name: 'checklist-bold' },
+    { name: 'close' },
+    { name: 'edit' },
+    { name: 'edit-outline' },
+    { name: 'folder-open' },
+    { name: 'plus' },
+    { name: 'plus-bold' },
+    { name: 'rotate' },
+    { name: 'search' },
+    { name: 'setting' },
+    { name: 'three-dot' },
+    { name: 'tick'},
+    { name: 'trash' },
+    { name: 'triangle-down' }
+  ];
+.row
+  each val in iconFonts
+    .col-4
+      .code-example
+        .demo
+          +icon-fonts(val.name)
+        pre
+          code
+            | +icon-fonts(#{val.name})
+
+h2 Icon images
+-
+  var icons = [
+    { name: 'arrow-left' },
+    { name: 'arrow-right' },
+    { name: 'google' },
+    { name: 'help' },
+    { name: 'arrow-special' },
+    { name: 'color-picker' },
+    { name: 'decorator-left' },
+    { name: 'decorator-right' },
+    { name: 'mention' },
+    { name: 'google-1' },
+    { name: 'google-2' },
+    { name: 'slack-1' },
+    { name: 'slack-2' }
+  ];
+.row
+  each val in icons
+    .col-4
+      .code-example
+        .demo
+          +icon-images(val.name)
+        pre
+          code
+            | +icon-images(#{val.name})
