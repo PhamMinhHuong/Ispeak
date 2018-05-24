@@ -3,11 +3,8 @@
     "styleguide": {
       "title": "Style Guide"
     },
-    "j001_login": {
-      "title": "J001 Login"
-    },
-    "j088_my_account": {
-      "title": "J088 My account"
+    "home": {
+      "title": "Home"
     }
   }
 }

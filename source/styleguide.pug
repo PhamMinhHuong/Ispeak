@@ -1,4 +1,4 @@
-extends layout/_page-no-header
+extends layout/_page-default
 
 block head
   +head(head.styleguide)
@@ -23,11 +23,13 @@ block head
       border-radius: 0 0 0.25rem 0.25rem;
     }
 
+block header
+
 block main
   .container
     .row.justify-content-between.align-items-center.pt-4.pb-4
       .col-auto.mr-auto
-        h1 Jooto Coding Style Guides
+        h1 iSpeak Coding Style Guides
       .col-auto
         a.btn.btn-success(href="links.html") Back to list of page
 

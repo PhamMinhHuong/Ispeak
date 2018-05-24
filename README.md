@@ -1,4 +1,4 @@
-# JootoWebFrontend
+# iSpeak
 
 {A brief description of your project...}
 

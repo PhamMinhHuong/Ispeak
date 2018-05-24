@@ -7,14 +7,9 @@
         "categories": "N/A"
       },
       {
-        "title": "J001 Login",
-        "url": "j001-login",
-        "categories": "Login"
-      },
-      {
-        "title": "J088 My account",
-        "url": "j088-my-account",
-        "categories": "My account"
+        "title": "Home page",
+        "url": "home",
+        "categories": "Home"
       }
     ]
   }

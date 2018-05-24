@@ -1,8 +1,9 @@
-extends layout/_page-no-header
+extends layout/_page-default
 
 block head
-  +head(head.j001_login)
+  +head(head.home)
+
+block header
 
 block main
   +page-list(pageList.data)
-
