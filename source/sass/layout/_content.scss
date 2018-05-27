@@ -1,3 +1,95 @@
 // ======================================================
 // Layout :: Content
 // ======================================================
+
+//
+// Layout :: Content
+// --------------------------------------------------
+
+.promotion {
+  display: flex;
+  margin-top: 30px;
+
+  &-container {
+    position: relative;
+  }
+
+  &__item {
+    align-items: center;
+    background-color: $white;
+    box-shadow: 0 2px 54px 0 rgba(90, 90, 90, .15);
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    height: 179px;
+    position: relative;
+    z-index: 9;
+  }
+
+  &-bg {
+    box-shadow: 0 2px 54px 0 rgba(90, 90, 90, .15);
+    position: absolute;
+    height: 179px;
+    top: 18px;
+    left: 30px;
+    right: 30px;
+  }
+
+  &__icon {
+    position: absolute;
+    left: 50%;
+    opacity: .9;
+    transform: translateX(-50%);
+  }
+
+  &__content {
+    &-text {
+      color: $blue;
+      font-family: robotobold, Arial, Helvetica, sans-serif;
+      font-size: 24px;
+      letter-spacing: .5px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.about {
+  margin: 155px 0 170px;
+
+  &__image {
+    position: relative;
+
+    &-bg {
+      position: absolute;
+      left: -62px;
+      bottom: -50px;
+    }
+  }
+
+  &__content {
+    margin-top: 40px;
+    position: relative;
+  }
+
+  &__text {
+    left: 35px;
+    opacity: .7;
+    position: absolute;
+    top: 0;
+  }
+
+  &__title {
+    color: $blue;
+    font-family: robotobold, Arial, Helvetica, sans-serif;
+    font-size: $font-size-base;
+    letter-spacing: .3px;
+  }
+
+  &__des {
+    color: $gray-lighter;
+    font-size: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 9;
+  }
+}

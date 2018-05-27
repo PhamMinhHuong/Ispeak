@@ -5,12 +5,12 @@
 .button {
   $block: &;
 
-  @include font-bold();
-
-  font-size: 14px;
+  font-size: $font-size-base;
   line-height: 18px;
-  border-radius: 8px;
-  padding: 10px 38px;
+  border-radius: $border-radius-small;
+  padding: 10px 35px;
+  text-align: center;
+  text-transform: uppercase;
   transition: all .3s ease;
 
   // Modifier: Type
@@ -19,65 +19,34 @@
     color: $white;
 
     &:hover {
-      background-color: darken($blue, 10%);
+      background-color: $blue-light;
       color: $white;
     }
   }
 
   @include m('secondary') {
-    background-color: $blue-light;
-    color: $blue;
+    background-color: $gray;
+    color: $gray-dark;
 
     &:hover {
-      background-color: darken($blue-light, 10%);
-      color: $blue;
-    }
-  }
-
-  @include m('danger') {
-    background-color: $red-light;
-    color: $red;
-
-    &:hover {
-      background-color: darken($red-light, 10%);
-    }
-  }
-
-  @include m('light') {
-    background-color: $white;
-    color: $blue;
-
-    &:hover {
-      background-color: $blue-light;
-    }
-  }
-
-  @include m('google') {
-    background-color: transparent;
-    color: $google;
-    border: 1px solid $google;
-
-    &:hover {
-      background-color: $google;
-      color: $white;
-
-      .icon-images--google {
-        background-image: url('#{$path-image}/icon-google-hover.png');
-      }
+      background-color: darken($gray, 10%);
+      color: $gray-dark;
     }
   }
 
   // Modifier: Size
-  @include m('extra-small') {
-    padding: 6px 38px;
+  @include m('small') {
+    padding: 10px 35px;
   }
 
-  @include m('small') {
-    padding: 8px 38px;
+  @include m('basic') {
+    font-size: $font-size-large;
+    padding: 25px 50px;
   }
 
   @include m('large') {
-    padding: 16px 38px;
+    font-size: $font-size-large + 6;
+    padding: 30px 112px;
   }
 
   // Modifier: isFull

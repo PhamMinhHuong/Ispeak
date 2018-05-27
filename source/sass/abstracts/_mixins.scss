@@ -15,10 +15,3 @@
     @content;
   }
 }
-
-// Font bold
-@mixin font-bold() {
-  font-family: $font-family-bold;
-  font-weight: 600;
-}
-

@@ -1,0 +1,65 @@
+// Layout footer
+
+.footer {
+  &__item {
+    word-break: break-word;
+
+    &-title {
+      font-size: $font-size-large;
+      margin: 0;
+      text-transform: uppercase;
+    }
+
+    &-info {
+      margin: 15px 0 12px;
+    }
+  }
+
+  &__middle {
+    &-content {
+      border-top: 1px solid $gray;
+      margin-top: 30px;
+      padding: 20px 0 45px;
+    }
+  }
+
+  &__social {
+    margin-top: -38px;
+  }
+
+  &__register {
+    &-title {
+      color: $gray-dark;
+      font-size: $font-size-large;
+      margin-bottom: 12px;
+      letter-spacing: .4px;
+      line-height: 1.67;
+      text-align: left;
+      text-transform: uppercase;
+    }
+
+    &-form {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+
+      button {
+        flex: 0 0 168px;
+        margin-left: 31px;
+      }
+    }
+  }
+
+  &__coppyright {
+    background-color: $gray-dark;
+    color: $gray;
+    font-size: $font-size-extra-small;
+    padding: 16px;
+    text-align: center;
+
+    p {
+      margin-bottom: 0;
+      word-break: break-word;
+    }
+  }
+}

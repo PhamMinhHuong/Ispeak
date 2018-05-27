@@ -7,9 +7,7 @@ h2 Buttons Type
 -
   var buttonTypes = [
     { type: 'primary' },
-    { type: 'secondary' },
-    { type: 'danger' },
-    { type: 'light' }
+    { type: 'secondary' }
   ];
 .row
   each val in buttonTypes
@@ -17,13 +15,13 @@ h2 Buttons Type
       .code-example
         .demo
           +buttons({
-            text: 'テキストデモ',
+            text: 'normal',
             type: val.type
           })
         pre
           code
             | +buttons({
-            |   text: 'テキストデモ',
+            |   text: 'normal',
             |   type: '#{val.type}'
             | })
 
@@ -31,8 +29,8 @@ h2 Buttons Type
 h2 Button Size
 -
   var buttonSizes = [
-    { size: 'extra-small' },
     { size: 'small' },
+    { size: 'basic' },
     { size: 'large' }
   ];
 .row
@@ -41,14 +39,14 @@ h2 Button Size
       .code-example
         .demo
           +buttons({
-            text: 'テキストデモ',
+            text: 'normal',
             type: 'primary',
             size: val.size
           })
         pre
           code
             | +buttons({
-            |   text: 'テキストデモ',
+            |   text: 'normal',
             |   type: 'primary',
             |   size: '#{val.size}'
             | })
@@ -56,14 +54,14 @@ h2 Button Size
       .code-example
         .demo
           +buttons({
-            text: 'テキストデモ',
+            text: 'normal',
             type: 'secondary',
             size: val.size
           })
         pre
           code
             | +buttons({
-            |   text: 'テキストデモ',
+            |   text: 'normal',
             |   type: 'secondary',
             |   size: '#{val.size}'
             | })
@@ -75,14 +73,14 @@ h2 Button Icon
     .code-example
       .demo
         +buttons({
-          text: 'テキストデモ',
+          text: 'normal',
           type: 'primary',
           iconFont: 'plus'
         })
       pre
         code
           | +buttons({
-          |   text: 'テキストデモ',
+          |   text: 'normal',
           |   type: 'primary',
           |   iconFont: 'plus'
           | })
@@ -90,14 +88,14 @@ h2 Button Icon
     .code-example
       .demo
         +buttons({
-          text: 'テキストデモ',
+          text: 'normal',
           type: 'secondary',
           iconFont: 'plus'
         })
       pre
         code
           | +buttons({
-          |   text: 'テキストデモ',
+          |   text: 'normal',
           |   type: 'secondary',
           |   iconFont: 'plus'
           | })
@@ -109,7 +107,7 @@ h2 Button Full size
     .code-example
       .demo
         +buttons({
-          text: 'テキストデモ',
+          text: 'normal',
           type: 'primary',
           size: 'large',
           isFull: true
@@ -117,7 +115,7 @@ h2 Button Full size
       pre
         code
           | +buttons({
-          |   text: 'テキストデモ',
+          |   text: 'normal',
           |   type: 'primary',
           |   size: 'large',
           |   isFull: true
@@ -126,7 +124,7 @@ h2 Button Full size
     .code-example
       .demo
         +buttons({
-          text: 'テキストデモ',
+          text: 'normal',
           type: 'secondary',
           size: 'large',
           isFull: true
@@ -134,30 +132,8 @@ h2 Button Full size
       pre
         code
           | +buttons({
-          |   text: 'テキストデモ',
+          |   text: 'normal',
           |   type: 'secondary',
-          |   size: 'large',
-          |   isFull: true
-          | })
-
-//- Buttons :: Social
-h2 Buttons Social
-.row
-  .col-6
-    .code-example
-      .demo
-        +buttons({
-          text: 'Googleでログイン',
-          type: 'google',
-          size: 'large',
-          isFull: true,
-          iconImage: 'google'
-        })
-      pre
-        code
-          | +buttons({
-          |   text: 'Googleでログイン',
-          |   type: 'google',
           |   size: 'large',
           |   isFull: true
           | })
@@ -169,26 +145,26 @@ h2 Buttons Link
     .code-example
       .demo
         +buttons-link({
-          text: 'テキストデモ',
+          text: 'normal',
           type: 'primary'
         })
       pre
         code
           | +buttons-link({
-          |   text: 'テキストデモ',
+          |   text: 'normal',
           |   type: 'primary'
           | })
   .col-6
     .code-example
       .demo
         +buttons-link({
-          text: 'テキストデモ',
+          text: 'normal',
           type: 'secondary',
           href: 'links.html'
         })
       pre
         code
           | +buttons-link({
-          |   text: 'テキストデモ',
+          |   text: 'normal',
           |   type: 'secondary'
           | })

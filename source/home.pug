@@ -9,35 +9,61 @@ block main
       .promotion__item
         .promotion__icon
         .promotion__content
-          h2.promotion__content-text
-            | Đăng ký học thử
-          span.ion-chevron-right
+          h2.promotion__content-title
+            | Đăng ký học thử miễn phí
+          .promotion__content-link
+            span Đăng ký
+            span
       .promotion__item
         .promotion__icon
         .promotion__content
           h2.promotion__content-text
-            | Làm bài test online
-          span.ion-chevron-right
-      .promotion__item
-        .promotion__login
-          button.button.button--meidum Đăng nhập
+            | Làm bài test trình độ
+          span Đăng ký
+            span
     .about
       .about__image
         img(src='')
       .about__content
-        .about__title About
-        .about__des
-          | Giới thiệu
+        .about__title.section-title About
+        .about__text
+          | Giới thiệu về
           br
-          | về Ispeak.vn
+          | ispeak
+          p.about_des
+            | Lorem ipsum dolor sit amet, consectetur adip iscing elit. Sed felis turpis, efficitur vel faucibus id, placerat vel eros.
         .about__button
           button.button.button--medium Tìm hiểu thêm
     .why-us
-      .why-us__title Why us
-      .why-us__des
-        | Những điều
-        br
-        | chỉ có ở Ispeak.vn
+      .why-us__title.section-title Why us
+      .why-us__text
+        | Những điều chỉ có ở ispeak
+      .why-us__content
+        ul.why-us__list
+          li.why-us__item
+            a(href='#') thời gian ngắn cường độ cao
+          li.why-us__item.active
+            a(href='#') 100% giáo viên nước ngoài
+          li.why-us__item
+            a(href='#') Chi phí học thấp chất lượng cao
+          li.why-us__item
+            a(href='#') Học 1 thầy - 1 trò
+      .why-us__info
+        .why-us__info-col
+          .why-us__info-image
+            img(src='http://i.pravatar.cc/569x324', alt='')
+        .why-us__info-col
+          .why-us__info-image
+            img(src='http://i.pravatar.cc/569x324', alt='')
+          .why-us__info-des
+            .why-us__info-avatar
+              img(src='http://i.pravatar.cc/79x79', alt='')
+            .why-us__info-text
+              p Đội ngũ giáo viên có kinh nghiệm giảng dạy đến từ Anh, Pháp, Mỹ, Philippines, Canada.
+              p Tất cả đều có bằng cấp giảng dạy tiếng Anh chuyên nghiệp.
+        .why-us__info-col
+          .why-us__info-image
+            img(src='http://i.pravatar.cc/569x324', alt='')
     .services
       .services__title Services
       .services__des
@@ -52,60 +78,3 @@ block main
             | Cửa hàng sách học tiếng anh
           li.services__item
             | Dịch vụ biên tập tiếng anh
-    .listen
-      h3.listent__title
-        span Khoá học nổi bật
-        | Luyện nói trực tuyến
-      .listen__content
-        .listent__list
-          .listen__item
-            .listen__item-top
-              .listen__item-icon
-                img(src='')
-              .listen__item-begin
-                | Sắp bắt đầu
-            .listen__item-bottom
-              h5.listen__item-title
-                strong Chủ đề:
-                | Cambridge Flyers - Lesson 5
-              .listen__item-time
-                i.ion-clock
-                span 20:00-21:00
-                span |
-                span 12/03
-              .listen__item-button
-                button.button.button--tranperant Tham gia
-          .listen__item
-            .listen__item-top
-              .listen__item-icon
-                img(src='')
-              .listen__item-begin
-                | Sắp bắt đầu
-            .listen__item-bottom
-              h5.listen__item-title
-                strong Chủ đề:
-                | Cambridge Mover - Lesson 8
-              .listen__item-time
-                i.ion-clock
-                span 20:00-21:00
-                span |
-                span 15/03
-              .listen__item-button
-                button.button.button--tranperant Tham gia
-          .listen__item
-            .listen__item-top
-              .listen__item-icon
-                img(src='')
-              .listen__item-begin
-                | Sắp bắt đầu
-            .listen__item-bottom
-              h5.listen__item-title
-                strong Chủ đề:
-                | Cambridge Flyers - Lesson 6
-              .listen__item-time
-                i.ion-clock
-                span 20:00-21:00
-                span |
-                span 19/03
-              .listen__item-button
-                button.button.button--tranperant Tham gia

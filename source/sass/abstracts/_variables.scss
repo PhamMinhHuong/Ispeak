@@ -7,27 +7,35 @@
 // Detail: https://getbootstrap.com/docs/4.0/getting-started/theming/#variable-defaults
 $white: #fff;
 $black: #000;
-$blue: #4dabff;
-$blue-light: #edf6ff;
-$purple: #7d5cc1;
+$blue: #076fd6;
+$blue-light: #1982eb;
 $pink: #fc78b9;
-$red: #ff4040;
-$red-light: #ffebeb;
-$orange: #ff954a;
-$green: #36c398;
-$yellow: #fdd835;
-$green-light: #aeda49;
-$gray: #d8d8d8;
-$gray-light: #f9f7f5;
-$gray-dark: #84868f;
-$gray-darker: #656873;
-$google: #e92e40;
-$facebook: #2177de;
+$red: #de4e59;
+$orange: #ffac33;
+$green: #29cd89;
+$gray: #ededed;
+$gray-light: #f7f9fa;
+$gray-lighter: #8e9fb5;
+$gray-dark: #173050;
+$gray-darker: #283b53;
+$grey: #606c7d;
 
 // Fonts
-$font-family-base: 'Hiragino Sans', 'Open Sans', 'Yu Gothic', 'Meiryo', 'Hiragino Kaku Gothic Pro', '游ゴシック', 'メイリオ', 'MS ゴシック', 'sans-serif';
-$font-family-bold: 'Hiragino Sans W6', 'Open Sans', 'Yu Gothic', 'Meiryo', 'Hiragino Kaku Gothic Pro', '游ゴシック', 'メイリオ', 'MS ゴシック', 'sans-serif';
 $font-size-base: 14px;
+$font-size-extra-small: 11px;
+$font-size-small: 13px;
+$font-size-medium: 16px;
+$font-size-large: 18px;
+
+$font-weight-base: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 600;
+
+// Borders
+$border-radius-base: 8px;
+$border-radius-small: 3px;
+$border-radius-hack: 100px;
 
 // Paths
 $path-image: '../images';

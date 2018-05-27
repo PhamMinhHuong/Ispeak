@@ -2,29 +2,22 @@ mixin header()
   header.header
     .header__top
       .header__top-info
-        .header__top-language
-          span Vietnamese
         .header__top-hotline
           | Hotline: 19002215 - (024) 665 08862
-      .header__top-user
-        ul.side-right
-          li.side-right__item
-            a(href='#') Đăng ký
-          li.side-right__item
-            a(href='#') Đăng nhập
-          li.side-right__item.side-right__item--search
-            form.form-search(action='search.html')
-              button.form-search__button(type='submit')
-                span.ion-ios-search
-              input.form-search__input(type='search' name='q' maxlength='200' placeholder='Seach...')
+      .header__portal
+        img(src='images/portal.png' alt='Portal Images')
+        span.header__portal-text
+          | Cổng thông tin học tiếng anh
     .header__midle
       .header__logo
         a(href='#')
           img(src='images/logo.png' alt='Logo Ispeak')
       .header__portal
-        img(src='images/portal.png' alt='Portal Images')
-        span.header__portal-text
-          | Cổng thông tin học tiếng anh của ispeak
+        ul.side-right
+          li.side-right__item
+            a(href='#') Đăng ký
+          li.side-right__item
+            a(href='#') Đăng nhập
     .header__menu
       nav.header__menu-nav
       ul.header__menu-list

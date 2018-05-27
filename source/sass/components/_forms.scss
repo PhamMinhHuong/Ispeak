@@ -2,6 +2,30 @@
 // Components :: Forms
 // ======================================================
 
+.form-control {
+  border: 1px solid transparent;
+  border-radius: $border-radius-small;
+  color: $grey;
+  font-size: $font-size-base;
+  height: 40px;
+  padding: 12px 30px;
+
+  &--disabled {
+    &:disabled {
+      background-color: $white;
+    }
+  }
+
+  &:focus {
+    border-color: $blue;
+    box-shadow: none;
+  }
+
+  &--gray {
+    background-color: $gray;
+  }
+}
+
 .form-customize {
   label {
     font-size: 12px;

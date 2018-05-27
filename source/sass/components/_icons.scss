@@ -2,6 +2,50 @@
 // Components :: Icons
 // ======================================================
 
+//
+// Components :: Font icons
+// --------------------------------------------------
+
+@font-face {
+  font-family: robotoregular;
+  src:
+    url('#{$path-fonts}Roboto-Regular-webfont.eot'),
+    url('#{$path-fonts}Roboto-Regular-webfont.eot#iefix') format('embedded-opentype'),
+    url('#{$path-fonts}Roboto-Regular-webfont.woff2') format('woff2'),
+    url('#{$path-fonts}Roboto-Regular-webfont.woff') format('woff'),
+    url('#{$path-fonts}Roboto-Regular-webfont.ttf') format('truetype'),
+    url('#{$path-fonts}Roboto-Regular-webfont.svg#robotoregular') format('svg');
+  font-weight: $font-weight-base;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: robotobold;
+  src:
+    url('#{$path-fonts}Roboto-Bold-webfont.eot'),
+    url('#{$path-fonts}Roboto-Bold-webfont.eot#iefix') format('embedded-opentype'),
+    url('#{$path-fonts}Roboto-Bold-webfont.woff2') format('woff2'),
+    url('#{$path-fonts}Roboto-Bold-webfont.woff') format('woff'),
+    url('#{$path-fonts}Roboto-Bold-webfont.ttf') format('truetype'),
+    url('#{$path-fonts}Roboto-Bold-webfont.svg#robotobold') format('svg');
+  font-weight: $font-weight-base;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: robotolight;
+  src:
+    url('#{$path-fonts}Roboto-Light-webfont.eot'),
+    url('#{$path-fonts}Roboto-Light-webfont.eot#iefix') format('embedded-opentype'),
+    url('#{$path-fonts}Roboto-Light-webfont.woff2') format('woff2'),
+    url('#{$path-fonts}Roboto-Light-webfont.woff') format('woff'),
+    url('#{$path-fonts}Roboto-Light-webfont.ttf') format('truetype'),
+    url('#{$path-fonts}Roboto-Light-webfont.svg#robotolight') format('svg');
+  font-weight: $font-weight-base;
+  font-style: normal;
+}
+
+
 // Icon Fonts
 @font-face {
   font-family: jootoicons;

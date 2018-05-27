@@ -2,17 +2,88 @@
 //- Modules :: Forms
 //-------------------------------------------------------
 
-mixin input-field({ type, placeholder })
+//- Input Field
+mixin input-field({ type, placeholder, value })
   input.form-control(
     type= type ? type : 'text'
     placeholder= placeholder ? placeholder : null
+    value= value ? value : null
   )&attributes(attributes)
 
+//- Input Field has label
 mixin group-input-field({ label, id, type, placeholder })
   .form-group.form-customize&attributes(attributes)
     label(
       for= id ? id : null
     )= label
-    +input-field({ type, placeholder })(
+      if smallLabel
+        span= smallLabel
+    +input-field({ type, placeholder, value })(
+      id= id ? id : null
+    )
+
+//- Input Field Readonly
+mixin group-input-field-readonly({ label, value })
+  .form-group.form-customize&attributes(attributes)
+    label= label
+    input.form-control(
+      type='text'
+      value= value ? value : null
+      readonly
+    )
+
+//- Input Field Disabled
+mixin input-field-disabled({ type, placeholder, value, disabled })
+  input.form-control(
+    type= type ? type : 'text'
+    placeholder= placeholder ? placeholder : null
+    value= value ? value : null
+    disabled= disabled ? disabled : null
+    class=disabled ? `form-control--${disabled}` : null
+  )&attributes(attributes)
+
+//- Input Radio
+mixin group-input-radio({ name, id, label, value, checked })
+  .form-group.input-radio-custom&attributes(attributes)
+    if checked === true
+      input.input-checkbox(type='radio', name=name, id=id, checked='checked')
+    else
+      input.input-checkbox(type='radio', name=name, id=id)
+    label(for=id)= label
+
+//- Group Input Checkbox
+mixin group-input-checkbox({ name, id, label, value, checked , disabled})
+  .form-group.input-checkbox-custom(
+    class=disabled ? 'input-checkbox--disabled' : null
+  )&attributes(attributes)
+    if checked === true
+      input.input-checkbox(type='checkbox', name=name, id=id, checked='checked', disabled = disabled)
+    else
+      input.input-checkbox(type='checkbox', name=name, id=id, disabled = disabled)
+    label(for=id)= label
+
+//- Input Radio Dropdown
+mixin group-input-radio-dropdown({ name, id, label, value, checked })
+  .form-group.input-radio-dropdown&attributes(attributes)
+    if checked === true
+      input.input-checkbox(type='radio', name=name, id=id, checked='checked')
+    else
+      input.input-checkbox(type='radio', name=name, id=id)
+    label(for=id)= label
+
+//- Textarea
+mixin textarea({ placeholder, value })
+  .form-textarea&attributes(attributes)
+    textarea.form-control(
+      placeholder= placeholder ? placeholder : null
+    )= value
+
+//- Input Textarea has label
+mixin group-textarea({ label, id, placeholder, value})
+  .form-group.form-customize&attributes(attributes)
+    label(
+      for= id ? id : null
+    )= label
+    +textarea({ placeholder, value })(
       id= id ? id : null
     )
