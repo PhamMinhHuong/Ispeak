@@ -1,6 +1,10 @@
 node_modules/
 dest/
 tmp/
+.vscode/
+.DS_Store
+source/.DS_Store
+*.map
 
 .framgia-ci-reports/**
 !.framgia-ci-reports/.keep

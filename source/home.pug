@@ -64,17 +64,113 @@ block main
         .why-us__info-col
           .why-us__info-image
             img(src='http://i.pravatar.cc/569x324', alt='')
+    .join-us
+      .container
+        .row
+          .col-md-12
+            .join-us__content
+              .join-us__title.section-title Join us
+              .join-us__info.section-info
+                | Bắt đầu học với 3 bước đơn giản
+              .join-us__content
+                .row
+                  .col-md-4
+                    .join-us__item
+                      .join-us__image
+                        img(src='images/img-join.jpg' alt='')
+                      .join-us__box
+                        .join-us__step Step 01
+                        h4.join-us__text Đăng ký tài khoản
+                        p.join-us__des
+                          | Đăng ký tài khoản dễ dàng - Học thử miễn phí
+                        a.join-us__link(href='#') Bạn chưa có tài khoản?
+                  .col-md-4
+                    .join-us__item
+                      .join-us__image
+                        img(src='images/img-join.jpg' alt='')
+                      .join-us__box
+                        .join-us__step Step 02
+                        h4.join-us__text Chọn giáo viên và lịch học
+                        p.join-us__des
+                          | Chọn giáo viên > Đặt lịch học > Chọn bài học
+                  .col-md-4
+                    .join-us__item
+                      .join-us__image
+                        img(src='images/img-join.jpg' alt='')
+                      .join-us__box
+                        .join-us__step Step 03
+                        h4.join-us__text Học tại bất kỳ đâu
+                        p.join-us__des
+                          | Bắt đầu bài học với Máy tính, ĐTDĐ bất cứ lúc nào, bất cứ nơi nào
     .services
-      .services__title Services
-      .services__des
-        | Chương trình phong phú
-      .services__content
-        ul.services__list
-          li.services__item
-            | Tiếng anh cho người lớn
-          li.services__item
-            | Tiếng anh cho cho thiếu nhi
-          li.services__item
-            | Cửa hàng sách học tiếng anh
-          li.services__item
-            | Dịch vụ biên tập tiếng anh
+      .container
+        .row
+          .col-md-12
+            .services__title.section-title Services
+            .services__info.section-info
+              | Chương trình học
+            .services__content
+              .row.align-items-center
+                .col-md-3
+                  img(src='images/bg-oxford.png' alt='image-services')
+                .col-md-3
+                  img(src='images/bg-cambridge.png' alt='image-services')
+                .col-md-3
+                  img(src='images/bg-kentucky.png' alt='image-services')
+                .col-md-3
+                  img(src='images/bg-southampton.png' alt='image-services')
+    .review
+      .container
+        .row
+          .col-md-12
+            .review__title.section-title Why us
+            .review__info.section-info
+              | Học viên nói về ispeak
+            .review__content
+              .review__images
+                img(src='http://i.pravatar.cc/178x178', alt='')
+              .review__list
+                p.review__des
+                  | Em là sinh viên năm ba Đại học, em rất muốn học giao tiếp tiếng Anh với
+                  | giáo viên nước ngoài nhưng chi phí học là điều em băn khoan nhất.
+                  | Khóa học giao tiếp 30 buổi tại iSpeak chỉ có 70k/buổi lại được sử dụng
+                  | kho dữ liệu học tập rất lớn, sau khi tham khảo, em thấy học ở đây vừa hiệu quả mà chí phí thấp...
+                .review__public
+                  span.review__star
+                    img(src='images/star.png' alt='star')
+                  span.review__line
+                  span.review__user
+                    | An Hòa
+                  span.review__text
+                    | 21 tuổi - Đại học kinh tế quốc dân - Hà nội
+                .review__thumbnail
+                  img.review__thumbnail-image.active(src='http://i.pravatar.cc/36x36', alt='')
+                  img.review__thumbnail-image(src='http://i.pravatar.cc/36x36', alt='')
+                  img.review__thumbnail-image(src='http://i.pravatar.cc/36x36', alt='')
+                  img.review__thumbnail-image(src='http://i.pravatar.cc/36x36', alt='')
+                  img.review__thumbnail-image(src='http://i.pravatar.cc/36x36', alt='')
+    .advisory
+      .container
+        .row
+          .col-md-12
+            .advisory__box
+              h3.advisory__title Bạn cần tư vấn thêm?
+              p.advisory__des
+                | Nhập thông tin liên lạc, chúng tôi sẽ gọi lại cho bạn ngay
+              .advisory__form
+                +input-field({
+                  type: 'text',
+                  placeholder: 'Tên bạn'
+                })(class='form-control--large')
+                +input-field({
+                  type: 'text',
+                  placeholder: 'Email'
+                })(class='form-control--large')
+                +input-field({
+                  type: 'text',
+                  placeholder: 'Số điện thoại'
+                })(class='form-control--large')
+                +buttons({
+                  type: 'primary',
+                  size: 'small'
+                })

@@ -3,46 +3,48 @@ mixin header()
     .header__top
       .container
         .row.align-items-center
-          .col-6
+          .col-md-6
             .header__top-info
               a.header__top-hotline(href='')
                 span Hotline:
                 | 19002215 - (024) 665 08862
-          .col-6
+          .col-md-6
             .header__portal
               img(src='images/portal.png' alt='Portal Images')
-    .header__midle
+    .header__middle
       .container
         .row.align-items-center
-          .col-6
+          .col-md-6
             .header__logo
               a(href='#')
                 img(src='images/logo.png' alt='Logo Ispeak')
-          .col-6
+          .col-md-6
             ul.side-right
-              li.side-right__item
-                a(href='#') Đăng ký
-              li.side-right__item
+              li.side-right__item.side-right__item--register
                 a(href='#') Đăng nhập
+              li.side-right__item.side-right__item--login
+                a(href='#') Đăng ký
     .header__menu
-      nav.header__menu-nav
-      ul.header__menu-list
-        li.header__menu-item.header__menu-item--active
-          a(href='#') Giới thiệu
-        li.header__menu-item
-          a(href='#') Giáo viên
-        li.header__menu-item
-          a(href='#') Khoá học
-        li.header__menu-item
-          a(href='#') Gói học phí
-        li.header__menu-item
-          a(href='#') Tiếng anh thiếu nhi
-          span.header__menu-hot Hot
-        li.header__menu-item
-          a(href='#') Hướng dẫn
-        li.header__menu-item
-          a(href='#') Đặt lịch học
-        li.header__menu-item
-          a(href='#') Open class
-        li.header__menu-item
-          a(href='#') Blog
+      .container
+        .row
+          .col-md-12
+            ul.header__menu-list.nav.navbar-nav
+              li.header__menu-item.active
+                a(href='#') Giới thiệu
+              li.header__menu-item
+                a(href='#') Giáo viên
+              li.header__menu-item
+                a(href='#') Khoá học
+              li.header__menu-item
+                a(href='#') Gói học phí
+              li.header__menu-item.menu-promotion
+                a(href='#') Tiếng anh thiếu nhi
+                span.header__menu-hot Hot
+              li.header__menu-item
+                a(href='#') Hướng dẫn
+              li.header__menu-item
+                a(href='#') Đặt lịch học
+              li.header__menu-item
+                a(href='#') Open class
+              li.header__menu-item
+                a(href='#') Blog

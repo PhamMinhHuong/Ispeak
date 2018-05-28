@@ -3,7 +3,7 @@ mixin footer()
     .footer__top
       .container
         .row
-          .col-3
+          .col-md-3
             .footer__item
               h3.footer__item-title Trụ sở chính
               p.footer__item-info
@@ -11,7 +11,7 @@ mixin footer()
               .footer__item-phone
                 span
                 span 19002215 - (024) 665 08862
-          .col-3
+          .col-md-3
             .footer__item
               h3.footer__item-title VP HÀ NỘI
               p.footer__item-info
@@ -19,7 +19,7 @@ mixin footer()
               .footer__item-phone
                 span
                 span info@iSpeak.vn
-          .col-3
+          .col-md-3
             .footer__item
               h3.footer__item-title VP HỒ CHÍ MINH
               p.footer__item-info
@@ -27,7 +27,7 @@ mixin footer()
               .footer__item-phone
                 span
                 span info@iSpeak.vn
-          .col-3
+          .col-md-3
             .footer__item
               iframe(
                 src='https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fispeakvietnam%2F&tabs&width=274&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=941040379264170'
@@ -41,7 +41,7 @@ mixin footer()
     .footer__social
       .container
         .row
-          .col-12
+          .col-md-12
             span.footer__social-tw
               img(src='images/ic-twitter.svg' alt='icon-social')
             span.footer__social-gg
@@ -52,17 +52,17 @@ mixin footer()
       .container
         .footer__middle-content
           .row.align-items-center
-            .col-6
+            .col-md-6
               .footer__logo
                 a(href='#')
                   img(src='images/logo.png' alt='Logo Ispeak')
-            .col-6
+            .col-md-6
               .footer__register
                 h3.footer__register-title Đăng ký nhận bản tin Ispeak
                 .footer__register-form
                   +input-field({
-                      type: 'text',
-                      placeholder: 'Nhập vào email cuả bạn'
+                    type: 'text',
+                    placeholder: 'Nhập vào email cuả bạn'
                   })(class='form-control--gray')
                   +buttons({
                     text: 'Gửi đi',
