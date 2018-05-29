@@ -6,34 +6,52 @@ block head
 block main
   main.main-content
     .promotion
-      .promotion__item
-        .promotion__icon
-        .promotion__content
-          h2.promotion__content-title
-            | Đăng ký học thử miễn phí
-          .promotion__content-link
-            span Đăng ký
-            span
-      .promotion__item
-        .promotion__icon
-        .promotion__content
-          h2.promotion__content-text
-            | Làm bài test trình độ
-          span Đăng ký
-            span
+      .container
+        .row
+          .col-md-12
+            .promotion__content
+              .promotion__item
+                .promotion__icon
+                  img(src='images/pencil.svg', alt='pencil')
+                .promotion__info
+                  h2.promotion__info-title
+                    | Đăng ký học thử miễn phí
+                  a.promotion__info-link(href='#')
+                    span Đăng ký
+                    span >
+              .promotion__item
+                .promotion__icon
+                  img(src='images/note.svg', alt='note')
+                .promotion__info
+                  h2.promotion__info-title
+                    | Làm bài test trình độ
+                  a.promotion__info-link(href='#')
+                    span Đăng ký
+                    span >
     .about
-      .about__image
-        img(src='')
-      .about__content
-        .about__title.section-title About
-        .about__text
-          | Giới thiệu về
-          br
-          | ispeak
-          p.about_des
-            | Lorem ipsum dolor sit amet, consectetur adip iscing elit. Sed felis turpis, efficitur vel faucibus id, placerat vel eros.
-        .about__button
-          button.button.button--medium Tìm hiểu thêm
+      .container
+        .row
+          .col-md-12
+            .about__content
+              .row
+                .col-md-8
+                  .about__public
+                    .about__image
+                      img(src='images/img-about.jpg', alt='image-about')
+                    .about__play-video
+                      span.about__play-title Play video
+                      img(src='images/btn-play.svg' alt='btn-video')
+                .col-md-4
+                  .about__box
+                    .about__title.section-title About
+                    .about__text.section-info
+                      | Giới thiệu về
+                      br
+                      | ispeak
+                    p.about__des
+                      | Lorem ipsum dolor sit amet, consectetur adip iscing elit. Sed felis turpis, efficitur vel faucibus id, placerat vel eros.
+                    .about__link
+                      a(href='#') Tìm hiểu thêm
     .why-us
       .why-us__title.section-title Why us
       .why-us__text
@@ -68,40 +86,91 @@ block main
       .container
         .row
           .col-md-12
+            .join-us__title.section-title Join us
+            .join-us__info.section-info
+              | Bắt đầu học với 3 bước đơn giản
             .join-us__content
-              .join-us__title.section-title Join us
-              .join-us__info.section-info
-                | Bắt đầu học với 3 bước đơn giản
-              .join-us__content
+              .row
+                .col-md-4
+                  .join-us__item
+                    .join-us__image
+                      img(src='images/img-join.jpg' alt='')
+                    .join-us__box
+                      .join-us__step Step 01
+                      h4.join-us__text Đăng ký tài khoản
+                      p.join-us__des
+                        | Đăng ký tài khoản dễ dàng - Học thử miễn phí
+                      a.join-us__link(href='#') Bạn chưa có tài khoản?
+                .col-md-4
+                  .join-us__item
+                    .join-us__image
+                      img(src='images/img-join.jpg' alt='')
+                    .join-us__box
+                      .join-us__step Step 02
+                      h4.join-us__text Chọn giáo viên và lịch học
+                      p.join-us__des
+                        | Chọn giáo viên > Đặt lịch học > Chọn bài học
+                .col-md-4
+                  .join-us__item
+                    .join-us__image
+                      img(src='images/img-join.jpg' alt='')
+                    .join-us__box
+                      .join-us__step Step 03
+                      h4.join-us__text Học tại bất kỳ đâu
+                      p.join-us__des
+                        | Bắt đầu bài học với Máy tính, ĐTDĐ bất cứ lúc nào, bất cứ nơi nào
+    .our-team
+      .container
+        .row
+          .col-md-12
+            .our-team__container
+              .our-team__title.section-title Our team
+              .our-team__info.section-info
+                | Đội ngũ giáo viên tiêu biểu
+              .our-team__content
                 .row
                   .col-md-4
-                    .join-us__item
-                      .join-us__image
-                        img(src='images/img-join.jpg' alt='')
-                      .join-us__box
-                        .join-us__step Step 01
-                        h4.join-us__text Đăng ký tài khoản
-                        p.join-us__des
-                          | Đăng ký tài khoản dễ dàng - Học thử miễn phí
-                        a.join-us__link(href='#') Bạn chưa có tài khoản?
+                    .our-team__item.active
+                      .our-team__image
+                        img(src='images/img-ot-1.jpg' alt='image-ot')
+                      .our-team__public
+                        .our-team__star
+                          img(src='images/star.png' alt='star')
+                        h4.our-team__name Ms. Jessica Donal
+                        .our-team__review
+                          .our-team__number
+                            span.our-team__number-icon
+                            span.our-team__number-class 1290 lớp đã dạy
+                          .our-team__rate (Rate by 1290)
+                        p.our-team__des
+                          | Do you find English language difficult to learn? That's not a
+                          | problem because you've found the right teacher to help you.
                   .col-md-4
-                    .join-us__item
-                      .join-us__image
-                        img(src='images/img-join.jpg' alt='')
-                      .join-us__box
-                        .join-us__step Step 02
-                        h4.join-us__text Chọn giáo viên và lịch học
-                        p.join-us__des
-                          | Chọn giáo viên > Đặt lịch học > Chọn bài học
+                    .our-team__item
+                      .our-team__image
+                        img(src='images/img-ot-2.jpg' alt='image-ot')
+                      .our-team__public
+                        .our-team__star
+                          img(src='images/star.png' alt='star')
+                        h4.our-team__name Ms. Jessica Donal
+                        .our-team__review
+                          .our-team__number
+                            span.our-team__number-icon
+                            span.our-team__number-class 1290 lớp đã dạy
+                          .our-team__rate (Rate by 1290)
                   .col-md-4
-                    .join-us__item
-                      .join-us__image
-                        img(src='images/img-join.jpg' alt='')
-                      .join-us__box
-                        .join-us__step Step 03
-                        h4.join-us__text Học tại bất kỳ đâu
-                        p.join-us__des
-                          | Bắt đầu bài học với Máy tính, ĐTDĐ bất cứ lúc nào, bất cứ nơi nào
+                    .our-team__item
+                      .our-team__image
+                        img(src='images/img-ot-3.jpg' alt='image-ot')
+                      .our-team__public
+                        .our-team__star
+                          img(src='images/star.png' alt='star')
+                        h4.our-team__name Ms. Jessica Donal
+                        .our-team__review
+                          .our-team__number
+                            span.our-team__number-icon
+                            span.our-team__number-class 1290 lớp đã dạy
+                          .our-team__rate (Rate by 1290)
     .services
       .container
         .row

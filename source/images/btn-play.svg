@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="271" height="271">
+    <defs>
+        <filter id="a" width="271" height="271" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="2" in="SourceAlpha"/>
+            <feGaussianBlur result="blurOut" stdDeviation="7.348"/>
+            <feFlood flood-color="#5A5A5A" result="floodOut"/>
+            <feComposite in="floodOut" in2="blurOut" operator="atop"/>
+            <feComponentTransfer>
+                <feFuncA slope=".15" type="linear"/>
+            </feComponentTransfer>
+            <feMerge>
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <filter id="b" width="230" height="230" x="20" y="20" filterUnits="userSpaceOnUse">
+            <feOffset dy="2" in="SourceAlpha"/>
+            <feGaussianBlur result="blurOut" stdDeviation="7.348"/>
+            <feFlood flood-color="#5A5A5A" result="floodOut"/>
+            <feComposite in="floodOut" in2="blurOut" operator="atop"/>
+            <feComponentTransfer>
+                <feFuncA slope=".15" type="linear"/>
+            </feComponentTransfer>
+            <feMerge>
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+    <path fill="#FFAC33" fill-rule="evenodd" d="M135 55c45.287 0 82 36.712 82 82 0 45.287-36.713 82-82 82s-82-36.713-82-82c0-45.288 36.713-82 82-82z" filter="url(#a)" opacity=".4"/>
+    <path fill="#FFAC33" fill-rule="evenodd" d="M134.5 75c33.968 0 61.504 27.535 61.504 61.5S168.468 198 134.5 198c-33.968 0-61.504-27.535-61.504-61.5S100.532 75 134.5 75z" filter="url(#b)"/>
+    <path fill="#FFF" fill-rule="evenodd" stroke="#FFF" stroke-width="2" d="M161.988 136.5l-46.996 26.499v-52.997l46.996 26.498z"/>
+</svg>
