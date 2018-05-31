@@ -10,6 +10,11 @@
         "title": "Home page",
         "url": "home",
         "categories": "Home"
+      },
+      {
+        "title": "Open class",
+        "url": "open-class",
+        "categories": "Open"
       }
     ]
   }

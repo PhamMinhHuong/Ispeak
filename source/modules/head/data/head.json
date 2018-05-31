@@ -5,6 +5,9 @@
     },
     "home": {
       "title": "Home"
+    },
+    "open_class": {
+      "title": "Open class"
     }
   }
 }

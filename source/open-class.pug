@@ -1,0 +1,148 @@
+extends home
+
+block head
+  +head(head.open_class)
+
+block main
+  main.main-content
+    block banner
+      .banner
+        .container
+          .row
+            .col-md-12
+              .banner__content
+                h3.banner__title Open Class
+                p.banner__des Danh sách lớp học mở
+    block open-class
+      .open-class
+        .container
+          .row
+            .col-md-12
+              .open-class__content
+                .open-class__top
+                  h3.open-class__top-title Nhóm lớp: Tiếng anh cơ bản trẻ em
+                  span.open-class__top-icon
+                .open-class__link
+                  ul.open-class__link-list
+                    li.open-class__link-item.active
+                      a(href='#') Top lớp học
+                    li.open-class__link-item
+                      a(href='#') Lớp khuyên học
+                    li.open-class__link-item
+                      a(href='#') Lớp học sắp diễn ra
+                .open-class__box
+                  each val, index in [1, 2, 3, 4]
+                    .open-class__item
+                      .open-class__image
+                        img(src='images/img-open.jpg' alt='imgage-open')
+                      .open-class__info
+                        .open-class__info-top
+                          h4.open-class__info-title Cambridge Flyers lesson 8
+                          .open-class__info-sticker
+                            span.open-class__info-nb nb
+                            span.open-class__info-nh nh
+                        .open-class__info-detail
+                          .open-class__info-list
+                            span.open-class__info-icon
+                            .open-class__info-row
+                              span.open-class__info-name Lịch học :
+                              span.open-class__info-time 20:00 - 21:00
+                              span.open-class__info-date Ngày 24/05/2018
+                          .open-class__info-list
+                            span.open-class__info-icon
+                            .open-class__info-list
+                              span.open-class__info-name Học Phí :
+                              span.open-class__info-money 100.000đ
+                              span.open-class__info-free Miễn Phí
+                          .open-class__info-list
+                            span.open-class__info-icon
+                            .open-class__info-list
+                              span.open-class__info-name Giáo Viên :
+                              span.open-class__info-text Precy-Lyn S.dacanay
+                          .open-class__info-tag #Tiếng Anh cơ bản cho trẻ con
+                          .open-class__button
+                            +buttons({
+                                text: ' 24 học viên',
+                                type: 'secondary',
+                                size: 'small'
+                              })
+                            +buttons({
+                              text: 'Đăng ký',
+                              type: 'primary',
+                              size: 'small'
+                            })
+                +pagination()
+    block course
+        .course
+          .course__bg
+          .container
+            .row
+              .col-md-12
+                .course__container
+                  .course__info.section-info
+                    | Khoá học hữu ích
+                  .course__content
+                    .row
+                      .col-md-4
+                        .course__item
+                          .course__image
+                            img(src='images/img-course.jpg' alt='image-course')
+                          .course__public
+                            h4.course__name
+                              a(href='#') Cambridge Flyers- lesson 6
+                      .col-md-4
+                        .course__item
+                          .course__image
+                            img(src='images/img-course.jpg' alt='image-course')
+                          .course__public
+                            h4.course__name
+                              a(href='#') Cambridge Flyers- lesson 6
+                      .col-md-4
+                        .course__item
+                          .course__image
+                            img(src='images/img-course.jpg' alt='image-course')
+                          .course__public
+                            h4.course__name
+                              a(href='#') Cambridge Flyers- lesson 6
+    block test-yourself
+      .test-yourself
+        .container
+          .row
+            .col-md-12
+              .test-yourself__content
+                .row
+                  .col-md-7
+                    .test-yourself__image
+                      img(src='images/img-test.png' alt='imgage-test')
+                  .col-md-5
+                    .test-yourself__info
+                      h3.test-yourself__title Test yourself
+                      p.test-yourself__des
+                        | Làm bài test trình độ tiếng anh của bạn qua hình thức online- nhanh và dễ dàng hơn.
+                      a.test-yourself__link(href='#') Đăng Ký
+    block advisory
+      .advisory
+        .container
+          .row
+            .col-md-12
+              .advisory__box
+                h3.advisory__title Bạn cần tư vấn thêm?
+                p.advisory__des
+                  | Nhập thông tin liên lạc, chúng tôi sẽ gọi lại cho bạn ngay
+                .advisory__form
+                  +input-field({
+                    type: 'text',
+                    placeholder: 'Tên bạn'
+                  })(class='form-control--large')
+                  +input-field({
+                    type: 'text',
+                    placeholder: 'Email'
+                  })(class='form-control--large')
+                  +input-field({
+                    type: 'text',
+                    placeholder: 'Số điện thoại'
+                  })(class='form-control--large')
+                  +buttons({
+                    type: 'primary',
+                    size: 'small'
+                  })
